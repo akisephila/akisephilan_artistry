@@ -1,4 +1,4 @@
-# Akisephila's Website
+# Akisephilan Artistry
 ### Description
 The purpose of this website repository is to document all of the creative works of the Candy System in one easily navigable website.
 This will include both Safe For Work and Not Safe For Work content, such as Art, Creative Writing, Comics, and Music.
