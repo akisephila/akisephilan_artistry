@@ -44,22 +44,6 @@
 				color: #47599e;
 				background-color: #a3fff9;
 			}
-			function spoilerSFW() {
-        			var x = document.getElementById("spoilerSFWDiv");
-        			if (x.style.display === "none") {
-          				x.style.display = "block";
-        			} else {
-        				x.style.display = "none";
-        			}
-      			}
-			function spoilerNSFW() {
-        			var x = document.getElementById("spoilerNSFWDiv");
-        			if (x.style.display === "none") {
-          				x.style.display = "block";
-        			} else {
-        				x.style.display = "none";
-        			}
-      			}
 			.center {
 				display: block;
 				margin-left: auto;
@@ -128,12 +112,28 @@
     		<p><button class="button" onclick="spoilerSFW()">Click to reveal SFW Art</button>
     		<div id="spoilerSFWDiv">
       		Test
-    		</div>
+		</div></p>
     		<br>
-    		<button class="button" onclick="spoilerNSW()">Click to reveal NSFW Art</button>
+    		<p><button class="button" onclick="spoilerNSW()">Click to reveal NSFW Art</button>
     		<div id="spoilerNSFWDiv">
       		Test
 		</div></p>
+		<script>function spoilerSFW() {
+        			var x = document.getElementById("spoilerSFWDiv");
+        			if (x.style.display === "none") {
+          				x.style.display = "block";
+        			} else {
+        				x.style.display = "none";
+        			}
+      			}
+			function spoilerNSFW() {
+        			var x = document.getElementById("spoilerNSFWDiv");
+        			if (x.style.display === "none") {
+          				x.style.display = "block";
+        			} else {
+        				x.style.display = "none";
+        			}
+			}</script>
 	</body>
 	<br>
 	<br>
