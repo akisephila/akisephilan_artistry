@@ -44,8 +44,16 @@
 				color: #47599e;
 				background-color: #a3fff9;
 			}
-			function spoiler() {
-        			var x = document.getElementById("spoilerDiv");
+			function spoilerSFW() {
+        			var x = document.getElementById("spoilerSFWDiv");
+        			if (x.style.display === "none") {
+          				x.style.display = "block";
+        			} else {
+        				x.style.display = "none";
+        			}
+      			}
+			function spoilerNSFW() {
+        			var x = document.getElementById("spoilerNSFWDiv");
         			if (x.style.display === "none") {
           				x.style.display = "block";
         			} else {
@@ -65,6 +73,22 @@
 				margin-right: 5%;
 			}
 			p {
+				font-family: Arial, sans-serif;
+				font-size: 14px;
+				text-align: default;
+				color: #8af1ff;
+				margin-left: 5%;
+				margin-right: 5%;
+			}
+			#spoilerSFWDiv {
+				font-family: Arial, sans-serif;
+				font-size: 14px;
+				text-align: default;
+				color: #8af1ff;
+				margin-left: 5%;
+				margin-right: 5%;
+			}
+			#spoilerNSFWDiv {
 				font-family: Arial, sans-serif;
 				font-size: 14px;
 				text-align: default;
@@ -101,15 +125,15 @@
 		<p>Here is a collection of the vast majority of our artworks, excluding comic panels.<br>
     		This includes NSFW pornographic content. We hold no responsibility for underage people who view this content.</p>
 		<br>
-    		<button onclick="spoiler()">Click to reveal SFW Art</button>
-    		<div id="spoilerDiv">
+    		<p><button class="button" onclick="spoilerSFW()">Click to reveal SFW Art</button>
+    		<div id="spoilerSFWDiv">
       		Test
     		</div>
     		<br>
-    		<button onclick="spoiler()">Click to reveal NSFW Art</button>
-    		<div id="spoilerDiv">
+    		<button class="button" onclick="spoilerNSW()">Click to reveal NSFW Art</button>
+    		<div id="spoilerNSFWDiv">
       		Test
-    		</div>
+		</div></p>
 	</body>
 	<br>
 	<br>
