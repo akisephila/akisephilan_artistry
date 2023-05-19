@@ -71,6 +71,7 @@
 				color: #8af1ff;
 				margin-left: 5%;
 				margin-right: 5%;
+				display: none;
 			}
 			#spoilerNSFWDiv {
 				font-family: Arial, sans-serif;
@@ -79,6 +80,7 @@
 				color: #8af1ff;
 				margin-left: 5%;
 				margin-right: 5%;
+				display: none;
 			}
 			a {
 				color: #00cbe6;
@@ -107,31 +109,41 @@
 		
 		<h2>Art</h2>
 		<p>Here is a collection of the vast majority of our artworks, excluding comic panels.<br>
-    		This includes NSFW pornographic content. We hold no responsibility for underage people who view this content.</p>
+    		This includes NSFW pornographic content. We hold no responsibility for underage people who view this content.<br>
+		All work, except for commission work that has been paid for, is copyrighted and owned by us. You may not use it without our permission, and if we grant permission, we reserve the right to revoke it at any time for any reason.</p>
 		<br>
-    		<p><button class="button" onclick="spoilerSFW()">Click to show/hide SFW Art</button>
-    		<div id="spoilerSFWDiv" display="none">
-      		Test
+    		<p><button class="button" onclick="spoilerSFW()" width=300px>Click to show/hide SFW Art</button>
+    		<div id="spoilerSFWDiv">
+			<h2>2021</h2>
+			<p>Minestuck Plus: The Determinator - 20th of April, 2021<br>
+			<img src="images/art/SFW/the_determinator.png" width="300" height="300"><br>
+			<br>
+			Undertale AU "Blightsoul": Frisk sprite sheet - 26th of April, 2021<br>
+			<img src="images/art/SFW/Frisk.png" width="300" height="453"><br>
+			<br>
+			Minestuck Universe: King of the Pond - 27th of August, 2021<br>
+			<img src="images/art/SFW/king_of_the_pond_standby.png" width="300" height="300"><img src="images/art/SFW/king_of_the_pond_pulling_0.png" width="300" height="300"><br>
+			<img src="images/art/SFW/king_of_the_pond_pulling_1.png" width="300" height="300"><br>
 		</div></p>
     		<br>
-    		<p><button class="button" onclick="spoilerNSFW()">Click to show/hide NSFW Art</button>
-    		<div id="spoilerNSFWDiv" display="none">
+    		<p><button class="button" onclick="spoilerNSFW()" width=300px>Click to show/hide NSFW Art</button>
+    		<div id="spoilerNSFWDiv">
       		Test
 		</div></p>
 		<script>function spoilerSFW() {
         			var x = document.getElementById("spoilerSFWDiv");
-        			if (x.style.display === "none") {
-          				x.style.display = "block";
+        			if (x.style.display === "block") {
+          				x.style.display = "none";
         			} else {
-        				x.style.display = "none";
+        				x.style.display = "block";
         			}
       			}
 			function spoilerNSFW() {
         			var x = document.getElementById("spoilerNSFWDiv");
-        			if (x.style.display === "none") {
-          				x.style.display = "block";
+        			if (x.style.display === "block") {
+          				x.style.display = "none";
         			} else {
-        				x.style.display = "none";
+        				x.style.display = "block";
         			}
 			}</script>
 	</body>
