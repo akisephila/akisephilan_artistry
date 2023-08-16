@@ -145,7 +145,7 @@
     		<p><button class="button" onclick="spoilerSFW()" width=300px>Click to show/hide SFW Art</button>
     		<div id="spoilerSFWDiv">
 			<h2>2021</h2>
-			<button class="button" onclick="spoilerSFW2021()" width=300px>2021</button>
+			<button class="button" onclick="spoilerSFW2021()" width=300px>Click to show/hide</button>
 			<div id="spoilerSFWDiv2021">
 			<p>
 				<b>Minestuck Plus: The Determinator - 20th of April, 2021</b><br><br>
@@ -187,6 +187,8 @@
 			</p>
 			</div>
 			<h2>2022</h2>
+			<button class="button" onclick="spoilerSFW2022()" width=300px>Click to show/hide</button>
+			<div id="spoilerSFWDiv2022">
 			<p>
 				<b>SBEPIS Concept Art Work: Thaumerger, Figure Chisel, Vessejector, Capturllection Card, Curve Stamper, and Peons - 22nd of February, 2022</b><br><br>
 				<img src="images/art/SFW/Thaumerger.png" width="75%" height="auto"><br>
@@ -252,7 +254,10 @@
 				<i>This design and logo is copyrighted by us the same as all our work. It may not be used for any commercial or personal use under any circumstances. Permissions given to "Dragon & Fox Collective" for this design have been revoked and if they persist in using this design they are in violation of copyright and will be sued.</i>
 				<br><br><br>
 			</p>
+			</div>
 			<h2>2023</h2>
+			<button class="button" onclick="spoilerSFW2023()" width=300px>Click to show/hide</button>
+			<div id="spoilerSFWDiv2023">
 			<p>
 				<b>Request: "Kris Dreemurr Hates Radiohead Visual Novel" - 6th of February, 2023</b><br><br>
 				<img src="images/art/SFW/krisroom.png" width="75%" height="auto"><br>
@@ -306,6 +311,7 @@
 				<img src="images/art/SFW/lunadrycandy.png" width="75%" height="auto"><br>
 				<br><br>
 			</p>
+			</div>
 		</div></p>
     		<br>
     		<p><button class="button" onclick="spoilerNSFW()" width=300px>Click to show/hide NSFW Art</button>
@@ -343,8 +349,56 @@
         				x.style.display = "block";
         			}
       			}
+			function spoilerSFW2021() {
+        			var x = document.getElementById("spoilerSFWDiv2021");
+        			if (x.style.display === "block") {
+          				x.style.display = "none";
+        			} else {
+        				x.style.display = "block";
+        			}
+      			}
+			function spoilerSFW2022() {
+        			var x = document.getElementById("spoilerSFWDiv2022");
+        			if (x.style.display === "block") {
+          				x.style.display = "none";
+        			} else {
+        				x.style.display = "block";
+        			}
+      			}
+			function spoilerSFW2023() {
+        			var x = document.getElementById("spoilerSFWDiv2023");
+        			if (x.style.display === "block") {
+          				x.style.display = "none";
+        			} else {
+        				x.style.display = "block";
+        			}
+      			}
 			function spoilerNSFW() {
         			var x = document.getElementById("spoilerNSFWDiv");
+        			if (x.style.display === "block") {
+          				x.style.display = "none";
+        			} else {
+        				x.style.display = "block";
+        			}
+			}
+			function spoilerNSFW2021() {
+        			var x = document.getElementById("spoilerNSFWDiv2021");
+        			if (x.style.display === "block") {
+          				x.style.display = "none";
+        			} else {
+        				x.style.display = "block";
+        			}
+			}
+			function spoilerNSFW2022() {
+        			var x = document.getElementById("spoilerNSFWDiv2022");
+        			if (x.style.display === "block") {
+          				x.style.display = "none";
+        			} else {
+        				x.style.display = "block";
+        			}
+			}
+			function spoilerNSFW2023() {
+        			var x = document.getElementById("spoilerNSFWDiv2023");
         			if (x.style.display === "block") {
           				x.style.display = "none";
         			} else {
