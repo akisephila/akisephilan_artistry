@@ -45,6 +45,17 @@
 				color: #404040;
 				background-color: #bfbfbf;
 			}
+			#spoilerCWDiv {
+				font-family: Courier New, monospace;
+				font-size: 16px;
+				text-align: center;
+				color: #ffffff;
+  				background-color: #404040;
+  				width: auto;
+  				padding: 5%;
+  				margin-left: 5%;
+  				margin-right: 5%;
+			}
 			#dark { 
 				filter: brightness(0%);
 			}
@@ -132,9 +143,43 @@
 		<div class=page><h2 class="pagetitle">COMIC PAGE TITLE</h2><br>
 			<b>
 			<img class="panel" src="https://akisephila.github.io/akisephilan_artistry/comics/darkshade/cover.gif"><br>
-			<br>TEST<br>
+			<br><button class="button" onclick="spoilerCW()"><b>Content Warnings<b></button><br>
+				<div id="spoilerCWDiv">
+					The following are either currently in the comic, or will be at some point.<br>
+					Flashing Imagery<br>
+					Blood<br>
+					Gore<br>
+					Swearing<br>
+					Murder<br>
+					Death<br>
+					Rotting<br>
+					Dissociating<br>
+					Suicide<br>
+					Self-Harm<br>
+					Abuse<br>
+					Abuse Mention<br>
+					Rape Mention<br>
+					Decapitation<br>
+					Dismemberment<br>
+					Guns<br>
+					Mind Control<br>
+					Trypophobia-Inducing Imagery<br>
+					Vomit/Puking<br>
+					Depictions of Separation Anxiety<br>
+					Depictions of Severe Paranoia<br>
+					Drug Usage/Forced Drugging<br>
+				</div>
 			<br>test<br>
 			<br><a class=next href="https://akisephila.github.io/akisephilan_artistry/">==></a><br></b></div>
+	<script>function spoilerCW() {
+        			var x = document.getElementById("spoilerCWDiv");
+        			if (x.style.display === "block") {
+          				x.style.display = "none";
+        			} else {
+        				x.style.display = "block";
+        			}
+      			}
+	</script>
 	</body>
 	<br>
 	<br>
