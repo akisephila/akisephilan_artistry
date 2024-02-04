@@ -60,6 +60,41 @@
 				justify-content: center;
 				overflow-wrap: break-word;
 			}
+			#spoilerTOCDiv {
+				font-family: Courier New, monospace;
+				font-size: 16px;
+				text-align: center;
+				color: #ffffff;
+  				background-color: #000000;
+  				width: 650px;
+				max-width: 90%;
+				max-block-size: 90%;
+				display: none;
+				padding: 3%;
+				margin: auto;
+				justify-content: center;
+				overflow-wrap: break-word;
+			}
+			.flex-container {
+				display: flex;
+				flex-wrap: wrap;
+				justify-content: center;
+				color: #404040;
+				background-color: #000000;
+				margin-left: 5%;
+				margin-right: 5%;
+			}
+			.flex-container > div {
+				color: #404040;
+  				background-color: #000000;
+  				width: 100px;
+  				height: 100px;
+ 				margin: 1%;
+  				text-align: center;
+  				line-height: 100px;
+				font-family: Arial, sans-serif;
+  				font-size: 30px;
+			}
 			#dark { 
 				filter: brightness(0%);
 			}
@@ -173,11 +208,60 @@
 					Depictions of Separation Anxiety<br><br>
 					Depictions of Severe Paranoia<br><br>
 					Drug Usage/Forced Drugging
+				</div><br>
+			<br><button class="button" onclick="spoilerTOC()"><b>Table of Contents<b></button><br>
+				<br><div id="spoilerTOCDiv">
+				<div class="flex-container">
+					Season 1<br>
+					<div>Episode 1</div>
+					<div>Episode 2</div>
+					<div>Episode 3</div>
+					<div>Episode 5</div>
+					<div>Episode 6</div>
+					<div>Episode 7</div>
+					<div>Episode 8</div>
+					<div>Episode 9</div>
+					<div>Episode 10</div>
+					<div>Episode 11</div>
+					<div>Episode 12</div><br>
+					Season 2<br>
+					<div>Episode 1</div>
+					<div>Episode 2</div>
+					<div>Episode 3</div>
+					<div>Episode 5</div>
+					<div>Episode 6</div>
+					<div>Episode 7</div>
+					<div>Episode 8</div>
+					<div>Episode 9</div>
+					<div>Episode 10</div>
+					<div>Episode 11</div>
+					<div>Episode 12</div><br>
+					Season 3<br>
+					<div>Episode 1</div>
+					<div>Episode 2</div>
+					<div>Episode 3</div>
+					<div>Episode 5</div>
+					<div>Episode 6</div>
+					<div>Episode 7</div>
+					<div>Episode 8</div>
+					<div>Episode 9</div>
+					<div>Episode 10</div>
+					<div>Episode 11</div>
+					<div>Episode 12</div>
 				</div>
+				</div><br>
 			<br>test<br>
 			<br><a class=next href="https://akisephila.github.io/akisephilan_artistry/">==></a><br></b></div>
 	<script>function spoilerCW() {
         			var x = document.getElementById("spoilerCWDiv");
+        			if (x.style.display === "block") {
+          				x.style.display = "none";
+        			} else {
+        				x.style.display = "block";
+        			}
+      			}
+		function spoilerTOC() {
+        			var x = document.getElementById("spoilerTOCDiv");
         			if (x.style.display === "block") {
           				x.style.display = "none";
         			} else {
